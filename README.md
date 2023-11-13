@@ -16,8 +16,8 @@ Pros:
 - Well-suited for Balanced Clusters: They work well when clusters are spherical and of similar size
   
 Cons:
-- Sensitivity to Initialization
-- Assumes Circular Clusters
+- Sensitivity to Initialization: K-means, in particular, is sensitive to the initial placement of centroids, which can result in different clusters.
+- Assumes Circular Clusters: K-means assumes that clusters are spherical and equally sized, which may not reflect the true nature of all datasets.
 - Outliers Impact Results
 - Fixed Number of Clusters
 
