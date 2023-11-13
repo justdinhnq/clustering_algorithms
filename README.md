@@ -23,7 +23,7 @@ Clustering techniques are basically categorized into four groups: centroid, dens
 
 ## 4. Hierarchical Clustering
 <p align="center">
-<img src="https://developers.google.com/static/machine-learning/clustering/images/HierarchicalClustering.svg" width="300" height="300">
+<img src="https://developers.google.com/static/machine-learning/clustering/images/HierarchicalClustering.svg" width="500" height="500">
 </p>
 
 
