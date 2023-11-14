@@ -2,6 +2,7 @@
 When choosing a clustering algorithm, it's crucial to consider whether the algorithm scales to the target dataset and the desired characteristics of the clusters. An algorithm that scales linearly with the size of the target dataset would have its runtime decrease as compared with an algorithm that scales quadratically with the number of examples. Let's denote $n$ as the number of examples, $O(n)$ as the complexity of the linear-scaling algorithm, and $O(n^2)$ as the complexity of the quadratic-scaling algorithm. $O(n^2)$ algorithms are not practical and less effective than $O(n)$ algorithms when the number of examples are in millions. The desired characteristics for forming clusters vary across different categories of clustering techniques. Generally, they convey assumptions about the structure, distribution, and organization of the data, guiding the choice of clustering technique based on the dataset's expected properties.
 
 Clustering techniques are basically categorized into four groups: centroid, density, distribution, and hierarchy.
+
 ## 1. Centroid-based Clustering
 <p align="center">
 <img src="https://developers.google.com/static/machine-learning/clustering/images/CentroidBasedClustering.svg" width="300" height="300">
@@ -58,7 +59,7 @@ If you anticipate clusters with arbitrary shapes, varying levels of density, and
 
 - Adaptability to Shape: Clusters can take on arbitrary shapes rather than being confined to predefined forms.
 - Robustness to Noise: Density-based methods are designed to handle noise and outliers gracefully, focusing on regions of high data density.
-- Variable Cluster Density: Ability to identify clusters with varying levels of density within the dataset.
+- Variable Cluster Density: Ability to identify clusters with varying levels of density (dense and sparse regions) within the dataset.
 
 **Pros and Cons**:
 
@@ -89,7 +90,9 @@ If the data is expected to follow a specific statistical distribution, and you w
 
 **Desired Characteristics**:
 
-- 
+- Statistical Significance: Assumes that the data follows a particular statistical distribution, and clusters are formed based on deviations from this distribution.
+- Probabilistic Representation: Models clusters as the probability distributions, indicating a probabilistic view of the data
+- Variable Cluster Shapes: Can accommodate clusters with different shapes based on the underlying distribution of the data.
 
 **Pros and Cons**:
 
@@ -118,6 +121,9 @@ If you suspect a hierarchical organization in your data, where clusters have nes
 
 **Desired Characteristics**:
 
+- Nested Structure: Implies that the dataset has a hierarchical organization, where clusters can be grouped into larger structures and exhibit nested relationships.
+- Flexibility in Scale: Suggests that clusters may exist at various scales within the dataset.
+- Visual Representation: Provides a visual representation of the relationships between clusters, indicating a need for a comprehensive understanding of the dataset's structure
 
 **Pros and Cons**:
 
