@@ -128,7 +128,7 @@ In summary, distribution-based clustering offers flexibility in handling various
 
 **Concept**:
 
-
+Hierarchical clustering organizes data points into a tree-like structure, known as a dendrogram, based on the similarity between data points. Clusters are formed based on the structure of merging, and the structure of the dendrogram illustrates the relationship between clusters at different levels.
 
 **When to apply**:
 
@@ -142,15 +142,22 @@ If you suspect a hierarchical organization in your data, where clusters have nes
 
 **Pros and Cons**:
 
-
 Pros:
 
+- Hierarchical Structure: Hierarchical clustering produces a visual representation of clusters in the form of a dendrogram, allowing users to interpret the relationship between clusters.
+- No Predefined Number of Clusters: Hierarchical clustering doesn't require the user to specify the number of clusters beforehand. The dendrogram can be cut at different levels to obtain varying numbers of clusters.
+- Captures Data Variability: It captures the variability in cluster sizes and shapes, accommodating datasets with un-evenly distributed or non-spherical clusters
+- Agglomerative and Divisive Approaches: Hierarchical clustering supports both agglomerative (bottom-up) and divisive (top-down) approaches, providing flexibility in the clustering process.
   
 Cons:
 
+- Computational Complexity: The time complexity of hierarchical clustering can be high, especially for large datasets. It may not be as efficient as other clustering methods for very large datasets.
+- Sensitive to Noise: Hierarchical clustering can be sensitive to noise and outliers, as it continuously merges or splits clusters based on similarity.
+- Difficulty in Interpreting Large Dendrograms: Dendrograms can become complex and challenging to interpret, especially in large datasets with many data points.
+- Fixed Hierarchy: Once the hierarchical structure is established, it cannot be easily modified without recomputing the entire clustering process.
 
 **Conclusion**:
 
+In summary, hierarchical clustering provides a hierarchical organization of data points, flexibility in cluster interpretation, and doesn't require a predefined number of clusters. However, it can be computationally demanding, sensitive to noise, and may produce intricate dendrograms that are challenging to interpret.
 
-
-Note: Source of images from [google](https://developers.google.com/machine-learning/clustering/clustering-algorithms)
+**Note**: Source of images from [google](https://developers.google.com/machine-learning/clustering/clustering-algorithms)
