@@ -17,9 +17,9 @@ If you expect the clusters to be compact, well-defined around a central point, a
 
 **Desired Characteristics**:
 
-- Compactness:
-- Similar Cluster Size:
-- Spherical Shape:
+- Compactness: The clusters are expected to be tight and well-defined around a central point (centroid)
+- Similar Cluster Size: Ideally, clusters should have similar sizes
+- Spherical Shape: Centroid-based methods often assume clusters to be spherical, which influences the desired shape of the clusters.
 
 **Pros and Cons**:
 
@@ -37,12 +37,39 @@ Cons:
 - Outliers Impact Results: The presence of outliers can significantly affect the centroid positions and, consequently, the clustering results.
 - Fixed Number of Clusters: The user must specify the number of clusters beforehand, which might not be known in real-world scenarios.
 
+**Conclusion**:
+
 In summary, centroid-based clustering is a powerful and efficient approach, especially for well-behaved datasets. However, it may struggle with more complex data structures and is sensitive to certain parameters and assumptions
 
 ## 2. Density-based Clustering
 <p align="center">
 <img src="https://developers.google.com/static/machine-learning/clustering/images/DensityClustering.svg" width="300" height="300">
 </p>
+
+**Concept**:
+
+
+
+**When to apply**:
+
+If you anticipate clusters with arbitrary shapes, varying levels of density, and robustness to noise, density-based methods like DBSCAN could be more appropriate.
+
+**Desired Characteristics**:
+
+- Adaptability to Shape: Clusters can take on arbitrary shapes rather than being confined to predefined forms.
+- Robustness to Noise: Density-based methods are designed to handle noise and outliers gracefully, focusing on regions of high data density.
+- Variable Cluster Density: Ability to identify clusters with varying levels of density within the dataset.
+
+**Pros and Cons**:
+
+
+Pros:
+
+  
+Cons:
+
+
+**Conclusion**:
 
 
 
@@ -52,10 +79,57 @@ In summary, centroid-based clustering is a powerful and efficient approach, espe
 <img src="https://developers.google.com/static/machine-learning/clustering/images/DistributionClustering.svg" width="300" height="300">
 </p>
 
+**Concept**:
+
+
+
+**When to apply**:
+
+If the data is expected to follow a specific statistical distribution, and you want to model clusters as probability distributions, distribution-based methods might be suitable. 
+
+**Desired Characteristics**:
+
+- 
+
+**Pros and Cons**:
+
+
+Pros:
+
+  
+Cons:
+
+
+**Conclusion**:
+
+
 ## 4. Hierarchical Clustering
 <p align="center">
 <img src="https://developers.google.com/static/machine-learning/clustering/images/HierarchicalClustering.svg" width="500" height="500">
 </p>
+
+**Concept**:
+
+
+
+**When to apply**:
+
+If you suspect a hierarchical organization in your data, where clusters have nested relationships and exist at different scales, hierarchy-based methods like agglomerative clustering could be beneficial.
+
+**Desired Characteristics**:
+
+
+**Pros and Cons**:
+
+
+Pros:
+
+  
+Cons:
+
+
+**Conclusion**:
+
 
 
 Note: Source of images from [google](https://developers.google.com/machine-learning/clustering/clustering-algorithms)
